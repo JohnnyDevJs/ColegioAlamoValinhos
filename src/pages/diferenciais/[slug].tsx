@@ -16,12 +16,6 @@ import Container from '@/layout/Container'
 import Heading from '@/typography/Heading'
 import Collapse from '@/components/Collapse'
 
-import BackgroundDescriptionTop from '../../../public/assets/background-description-top.svg'
-import BackgroundDescriptionBottom from '../../../public/assets/background-description-bottom.svg'
-import BgMindTop from '../../../public/assets/background-mind-top-2.svg'
-import BgMindBottom from '../../../public/assets/background-mind-bottom.svg'
-import Badge from '../../../public/assets/badge-differential.svg'
-
 import {
   Hero,
   HeroContainer,
@@ -169,7 +163,6 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                       />
                       {router.query.slug === 'programa-bilingue' && (
                         <div className="cambridge" key={index}>
-                          <Badge />
                           <p>Certificação Cambridge</p>
                         </div>
                       )}
@@ -446,7 +439,6 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                 </Fade>
               </Container>
               <Description>
-                <BackgroundDescriptionTop />
                 <BackgroundColor>
                   <Fade
                     cascade
@@ -466,13 +458,11 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                     </Container>
                   </Fade>
                 </BackgroundColor>
-                <BackgroundDescriptionBottom />
               </Description>
             </Intelligence>
           )) ||
           (slice.slice_type === 'mind_makers' && (
             <MindMakersContainer key={index}>
-              <BgMindTop />
               <BgMindColor>
                 <Container column>
                   <Fade
@@ -514,7 +504,6 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                   </ul>
                 </Container>
               </BgMindColor>
-              <BgMindBottom />
             </MindMakersContainer>
           )) ||
           (slice.slice_type === 'videos' && (
