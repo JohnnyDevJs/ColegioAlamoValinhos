@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function getValidationErrors(err) {\n  const ValidationErrors = {};\n  err.inner.forEach(error => {\n    ValidationErrors[error.path] = error.message;\n  });\n  return ValidationErrors;\n}","map":null,"metadata":{},"sourceType":"module"}

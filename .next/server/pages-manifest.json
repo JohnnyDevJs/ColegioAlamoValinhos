@@ -1,0 +1,21 @@
+{
+  "/404": "pages/404.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/contato": "pages/contato.html",
+  "/cursos/[slug]": "pages/cursos/[slug].js",
+  "/diferenciais/[slug]": "pages/diferenciais/[slug].js",
+  "/": "pages/index.html",
+  "/matriculas/educacao-infantil": "pages/matriculas/educacao-infantil.html",
+  "/matriculas/educacao-infantil/cadastro-confirmado": "pages/matriculas/educacao-infantil/cadastro-confirmado.html",
+  "/matriculas/ensino-fundamental-1": "pages/matriculas/ensino-fundamental-1.html",
+  "/matriculas/ensino-fundamental-1/cadastro-confirmado": "pages/matriculas/ensino-fundamental-1/cadastro-confirmado.html",
+  "/matriculas/ensino-fundamental-2": "pages/matriculas/ensino-fundamental-2.html",
+  "/matriculas/ensino-fundamental-2/cadastro-confirmado": "pages/matriculas/ensino-fundamental-2/cadastro-confirmado.html",
+  "/o-colegio/blog": "pages/o-colegio/blog.js",
+  "/o-colegio/blog/[slug]": "pages/o-colegio/blog/[slug].js",
+  "/o-colegio/cantina": "pages/o-colegio/cantina.js",
+  "/o-colegio/galeria": "pages/o-colegio/galeria.js",
+  "/o-colegio/rede-do-bem": "pages/o-colegio/rede-do-bem.js",
+  "/_error": "pages/_error.js"
+}

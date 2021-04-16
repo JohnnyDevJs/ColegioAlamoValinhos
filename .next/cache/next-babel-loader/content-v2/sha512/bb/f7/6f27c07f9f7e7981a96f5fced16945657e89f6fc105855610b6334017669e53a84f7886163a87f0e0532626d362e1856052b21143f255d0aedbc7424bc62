@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Prismic from 'prismic-javascript';\nexport const apiEndpoint = 'https://colegioalamovalinhos.cdn.prismic.io/api/v2';\nexport const client = (req = null) => {\n  const options = req ? {\n    req\n  } : null;\n  return Prismic.client(apiEndpoint, options);\n};","map":null,"metadata":{},"sourceType":"module"}
