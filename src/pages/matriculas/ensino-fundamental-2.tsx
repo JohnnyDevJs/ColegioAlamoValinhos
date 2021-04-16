@@ -5,7 +5,7 @@ import Container from '@/layout/Container'
 import Heading from '@/typography/Heading'
 import Paragraph from '@/typography/Paragraph'
 
-import EnrollmentImage from '../../public/assets/enrollment.svg'
+import EnrollmentImage from '../../../public/assets/enrollment.svg'
 import { Hero } from '@/styles/pages/enrollment/styles'
 
 import SEO from '@/components/SEO'
