@@ -10,7 +10,7 @@ import {
   Button
 } from '@/styles/pages/pagenotfound/styles'
 
-import PageNotFoundImage from '../assets/page-not-found.svg'
+import PageNotFoundImage from '../../public/assets/page-not-found.svg'
 
 const PageNotFound: React.FC = () => {
   const router = useRouter()
