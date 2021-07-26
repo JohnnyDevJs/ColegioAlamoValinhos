@@ -36,6 +36,8 @@
     "multiline-ternary": "off",
     "camelcase": "off",
     "react/display-name": "off",
-    "@typescript-eslint/ban-types": "off"
+    "@typescript-eslint/ban-types": "off",
+    "react/jsx-no-undef": "off",
+    "react/jsx-key": "off"
   }
 }

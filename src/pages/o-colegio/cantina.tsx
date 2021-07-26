@@ -1,5 +1,6 @@
 import React from 'react'
 import { GetServerSideProps } from 'next'
+import Link from 'next/link'
 
 import { Fade } from 'react-awesome-reveal'
 import { client } from '@/lib/prismic'
@@ -48,16 +49,16 @@ const Carteen: React.FC<CarteenProps> = ({ carteen }) => {
             <ul>
               {carteen.map(item => item.data.list.map(l => <li>{l.text}</li>))}
             </ul>
-
-            <a rel="noreferrer" href={carteen.map(item => item.data.url.url)}>
-              {carteen.map(item => item.data.button.map(b => b.text))}
-            </a>
+            {carteen.map(item => (
+              <Link href={item.data.url.url} passHref={true}>
+                Vizualizar Cardápio
+              </Link>
+            ))}
           </ContentFood>
           <FoodImage>
-            <img
-              alt="Cantina"
-              src={carteen.map(item => item.data.imagem.url)}
-            />
+            {carteen.map(item => (
+              <img alt="Cantina" src={item.data.imagem.url} />
+            ))}
           </FoodImage>
         </Container>
       </Food>
