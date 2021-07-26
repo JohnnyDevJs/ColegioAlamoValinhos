@@ -24,7 +24,6 @@ export const H2 = styled.h2<HeadingProps>`
   color: ${props => props.titleColor};
   font-size: ${props => props.titleSize === 'medium' && '48px'};
   position: relative;
-  text-align: center;
 
   display: flex;
   flex-direction: column;

@@ -8,10 +8,10 @@ export const HeaderContainer = styled.header`
 
 export const Logo = styled.div`
   position: absolute;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
   background: ${props => props.theme.colors.white};
   border-radius: 0 40% 50% 50%;
   top: -25px;
@@ -29,17 +29,17 @@ export const Logo = styled.div`
     padding-right: 50px;
   }
 
-  ${down('sm')} {
-    top: calc(-60px + (-25 - (-73)) * ((100vw - 320px) / (768 - 320)));
-    left: calc(-30px + (-30 - (-50)) * ((100vw - 320px) / (768 - 320)));
-    padding-top: calc(45px + (20 - 45) * ((100vw - 320px) / (768 - 320)));
-    padding-bottom: calc(0px + (10 - 0) * ((100vw - 320px) / (768 - 320)));
-    padding-left: calc(45px + (50 - 55) * ((100vw - 320px) / (768 - 320)));
-    padding-right: calc(48px + (55 - 55) * ((100vw - 320px) / (768 - 320)));
+  ${between('xs', 'sm')} {
+    padding-top: 38px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 32px;
+  }
 
+  ${down('sm')} {
     svg {
       width: calc(
-        127px + (130 - 127) * ((100vw - 320px) / (768 - 320))
+        110px + (130 - 127) * ((100vw - 320px) / (768 - 320))
       ) !important;
     }
   }

@@ -6,8 +6,8 @@ const Topbar: React.FC = () => {
   const informations = [
     {
       id: 1,
-      title: 'Telefone: (19) 3514-7373',
-      url: 'tel:19351487373'
+      title: 'Telefone: (19) 3199-4500',
+      url: 'tel:1931994500'
     },
     {
       id: 2,

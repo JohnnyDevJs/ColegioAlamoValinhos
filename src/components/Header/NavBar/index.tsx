@@ -61,7 +61,6 @@ const Navbar: React.FC = () => {
           title: 'Ensino Fundamental II',
           slug: '/cursos/ensino-fundamental-2'
         },
-
         {
           id: 4,
           title: 'Cursos Extracurriculares',
@@ -100,18 +99,42 @@ const Navbar: React.FC = () => {
     {
       id: 4,
       title: 'Matrículas',
-      slug: '/matriculas'
+      slug: '/matriculas',
+      width: '297px',
+      items: [
+        {
+          id: 1,
+          title: 'Educação Infantil',
+          slug: '/matriculas/educacao-infantil'
+        },
+        {
+          id: 2,
+          title: 'Ensino Fundamental I',
+          slug: '/matriculas/ensino-fundamental-1'
+        },
+        {
+          id: 3,
+          title: 'Ensino Fundamental II',
+          slug: '/matriculas/ensino-fundamental-2'
+        },
+        {
+          id: 4,
+          title: 'Cursos Extracurriculares',
+          slug: '/matriculas/cursos-extracurriculares'
+        }
+      ]
     },
     {
       id: 5,
-      title: 'Contato',
-      slug: '/contato',
+      title: 'Trabalhe Conosco',
+      slug:
+        'https://docs.google.com/forms/d/e/1FAIpQLScnHyxB6f_aoj5YgWN83lJCGNskzuDrYkTEysJZ6h7GAxKFcA/viewform',
       width: ''
     },
     {
       id: 6,
-      title: 'Trabalhe Conosco',
-      slug: '/trabalhe-conosco',
+      title: 'Contato',
+      slug: '/contato',
       width: ''
     }
   ]

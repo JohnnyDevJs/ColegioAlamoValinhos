@@ -20,6 +20,12 @@ body {
   position: relative;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 input, textarea {
   font-family: 'Gotham Rounded';
 }

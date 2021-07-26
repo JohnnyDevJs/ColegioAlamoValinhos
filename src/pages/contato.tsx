@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                       Telefone:
                     </Heading>
                     <Paragraph paragraphColor="#696969">
-                      <a href="#">(19) 3514-7373</a>
+                      <a href="#">(19) 3199-4500</a>
                     </Paragraph>
                   </Item>
                 </Items>

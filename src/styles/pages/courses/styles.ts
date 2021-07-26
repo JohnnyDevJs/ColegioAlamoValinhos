@@ -318,7 +318,7 @@ export const BackgroundVideo = styled.div`
   }
 
   ${up('sm')} {
-    height: calc(370px + (900 - 370) * ((100vw - 576px) / (1920 - 576)));
+    height: 900px;
   }
 
   ${down('sm')} {

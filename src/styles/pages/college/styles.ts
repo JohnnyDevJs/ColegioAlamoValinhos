@@ -12,6 +12,7 @@ export const Food = styled.section`
 `
 
 export const ContentFood = styled.div`
+  width: 70%;
   h2 {
     align-items: flex-start;
   }
@@ -24,13 +25,33 @@ export const ContentFood = styled.div`
     font-weight: 500;
   }
 
+  a {
+    background-color: #bac529;
+    border-radius: 61px;
+    color: #ffffff;
+    font-weight: 500;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 24px;
+    padding: 15px 45px;
+    text-align: center;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
   ul {
     list-style: none;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 
     li {
-      font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1920 - 320)));
-      line-height: calc(30px + (33 - 30) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(20px + (22 - 20) * ((100vw - 320px) / (1920 - 320)));
+      line-height: calc(30px + (30 - 30) * ((100vw - 320px) / (1920 - 320)));
       color: ${props => props.theme.colors.grayThree};
 
       display: flex;
@@ -66,8 +87,13 @@ export const ContentFood = styled.div`
       display: block;
     }
 
+    a {
+      width: 100%;
+    }
+
     .align-button {
       text-align: center;
     }
   }
 `
+export const FoodImage = styled.div``

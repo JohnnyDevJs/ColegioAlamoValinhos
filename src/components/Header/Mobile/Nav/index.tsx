@@ -99,14 +99,15 @@ const Nav: React.FC = () => {
     },
     {
       id: 5,
-      title: 'Contato',
-      url: '/contato',
+      title: 'Trabalhe conosco',
+      url:
+        'https://docs.google.com/forms/d/e/1FAIpQLScnHyxB6f_aoj5YgWN83lJCGNskzuDrYkTEysJZ6h7GAxKFcA/viewform',
       items: []
     },
     {
       id: 6,
-      title: 'Trabalhe conosco',
-      url: '/trabalhe-conosco',
+      title: 'Contato',
+      url: '/contato',
       items: []
     }
   ]

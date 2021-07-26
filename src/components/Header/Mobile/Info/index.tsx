@@ -6,7 +6,7 @@ const Info: React.FC = () => (
   <InfoContainer>
     <InfoContainerItem>
       <a rel="noreferrer" target="_blank" href="tel:1935147373">
-        Telefone: (19) 3514-7373
+        Telefone: (19) 3199-4500
       </a>
     </InfoContainerItem>
 

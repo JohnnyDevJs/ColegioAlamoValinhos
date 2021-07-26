@@ -32,7 +32,7 @@ const Footer: React.FC = () => (
             Telefone:
           </Heading>
           <Paragraph paragraphColor="#FFFFFF">
-            <a href="tel:1935147373">(19) 3514-7373</a>
+            <a href="tel:1931994500">(19) 3199-4500</a>
           </Paragraph>
         </Item>
       </Items>

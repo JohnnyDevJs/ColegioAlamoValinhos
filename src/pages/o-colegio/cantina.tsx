@@ -1,9 +1,8 @@
 import React from 'react'
-import { GetServerSideProps, GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 
 import { Fade } from 'react-awesome-reveal'
 import { client } from '@/lib/prismic'
-import PrismicDOM from 'prismic-dom'
 import Prismic from 'prismic-javascript'
 import { useRouter } from 'next/dist/client/router'
 import { Document } from 'prismic-javascript/types/documents'
@@ -13,7 +12,7 @@ import Container from '@/layout/Container'
 import Heading from '@/typography/Heading'
 import Button from '@/components/Buttons/Link'
 
-import { Food, ContentFood } from '@/styles/pages/college/styles'
+import { Food, ContentFood, FoodImage } from '@/styles/pages/college/styles'
 
 import SEO from '@/components/SEO'
 
@@ -27,7 +26,7 @@ const Carteen: React.FC<CarteenProps> = ({ carteen }) => {
     return <Loading />
   }
 
-  console.log(carteen.map(item => item.data.description.map(i => i.text)))
+  // console.log(carteen.map(item => item.data.button.map(b => b.text)))
 
   return (
     <>
@@ -42,13 +41,24 @@ const Carteen: React.FC<CarteenProps> = ({ carteen }) => {
           <ContentFood>
             <Fade direction="left" duration={500} triggerOnce cascade>
               <Heading titleColor="#305FA4" titleSize="medium">
-                {carteen.map(item => item.data.description.map(i => i.text))}
+                Cantina
               </Heading>
-              {carteen.map(item =>
-                item.data.description.map((i, index) => i.text)
-              )}
             </Fade>
+            <p>{carteen.map(item => item.data.description.map(i => i.text))}</p>
+            <ul>
+              {carteen.map(item => item.data.list.map(l => <li>{l.text}</li>))}
+            </ul>
+
+            <a rel="noreferrer" href={carteen.map(item => item.data.url.url)}>
+              {carteen.map(item => item.data.button.map(b => b.text))}
+            </a>
           </ContentFood>
+          <FoodImage>
+            <img
+              alt="Cantina"
+              src={carteen.map(item => item.data.imagem.url)}
+            />
+          </FoodImage>
         </Container>
       </Food>
     </>

@@ -6,7 +6,7 @@ import { MobileContent, Logo } from './styles'
 import Nav from '@/components/Header/Mobile/Nav'
 import Info from '@/components/Header/Mobile/Info'
 
-import AlamoValinhosLogo from '../../../../../public/assets/alamo-logo-valinhos.svg'
+import AlamoValinhosLogo from '../../../../../public/assets/alamo-logo-valinhos-2.svg'
 
 const Toggle: React.FC = () => {
   const handleCloseToggle = useCallback(() => {

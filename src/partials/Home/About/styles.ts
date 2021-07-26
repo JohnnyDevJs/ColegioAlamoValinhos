@@ -60,8 +60,8 @@ export const AboutContainer = styled.section`
 
   .alice-carousel__dots {
     .alice-carousel__dots-item {
-      width: 19px;
-      height: 19px;
+      width: calc(10px + (19 - 10) * ((100vw - 320px) / (1920 - 320)));
+      height: calc(10px + (19 - 10) * ((100vw - 320px) / (1920 - 320)));
       background-color: ${props => props.theme.colors.grayFive};
 
       &.__active {
