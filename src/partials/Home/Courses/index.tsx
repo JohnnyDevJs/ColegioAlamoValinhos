@@ -23,12 +23,6 @@ const courses = [
     id: 3,
     title: 'Ensino<br/>Fundamental II',
     url: '/cursos/ensino-fundamental-2'
-  },
-
-  {
-    id: 4,
-    title: 'Cursos<br/>Extracurriculares',
-    url: '/cursos/cursos-extracurriculares'
   }
 ]
 

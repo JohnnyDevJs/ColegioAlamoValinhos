@@ -6,6 +6,10 @@ export const CoursesContainer = styled.section`
   padding-top: 4rem;
   padding-bottom: calc(16px + (96 - 16) * ((100vw - 320px) / (1920 - 320)));
 
+  .courses_boxes {
+    width: 32%;
+  }
+
   ${between('sm', 'lg')} {
     .courses_boxes {
       width: 48%;

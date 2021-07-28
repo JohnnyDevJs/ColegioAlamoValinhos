@@ -116,11 +116,6 @@ const Navbar: React.FC = () => {
           id: 3,
           title: 'Ensino Fundamental II',
           slug: '/matriculas/ensino-fundamental-2'
-        },
-        {
-          id: 4,
-          title: 'Cursos Extracurriculares',
-          slug: '/matriculas/cursos-extracurriculares'
         }
       ]
     },

@@ -55,12 +55,6 @@ const Nav: React.FC = () => {
           id: 3,
           title: 'Ensino Fundamental II',
           url: '/cursos/ensino-fundamental-2'
-        },
-
-        {
-          id: 4,
-          title: 'Cursos Extracurriculares',
-          url: '/cursos/cursos-extracurriculares'
         }
       ]
     },
@@ -94,8 +88,24 @@ const Nav: React.FC = () => {
     {
       id: 4,
       title: 'Matrículas',
-      url: '/matriculas',
-      items: []
+      url: '',
+      items: [
+        {
+          id: 1,
+          title: 'Educação Infantil',
+          url: '/matriculas/educacao-infantil'
+        },
+        {
+          id: 2,
+          title: 'Ensino Fundamental I',
+          url: '/matriculas/ensino-fundamental-1'
+        },
+        {
+          id: 3,
+          title: 'Ensino Fundamental II',
+          url: '/matriculas/ensino-fundamental-2'
+        }
+      ]
     },
     {
       id: 5,
