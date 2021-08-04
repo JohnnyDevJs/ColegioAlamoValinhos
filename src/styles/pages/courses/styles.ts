@@ -582,7 +582,7 @@ export const BackgroundGallery = styled.div`
   }
 
   ${up('sm')} {
-    height: calc(410px + (900 - 410) * ((100vw - 576px) / (1920 - 576)));
+    height: calc(490px + (900 - 490) * ((100vw - 576px) / (1920 - 576)));
   }
 
   ${down('sm')} {

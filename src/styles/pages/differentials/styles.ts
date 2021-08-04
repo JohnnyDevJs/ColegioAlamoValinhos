@@ -287,6 +287,9 @@ export const Methodology = styled.section`
     &:nth-child(2) {
       margin-top: 30px;
       margin-bottom: 4vw;
+
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -412,6 +415,12 @@ export const Description = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  svg {
+    &:first-child {
+      margin: -1px 0;
+    }
+  }
 `
 
 export const BackgroundColor = styled.div`
@@ -607,6 +616,10 @@ export const MindMakersContainer = styled.section`
 
   svg {
     display: flex;
+
+    &:first-child {
+      margin: -1px 0;
+    }
   }
 
   ${down('sm')} {
@@ -636,6 +649,12 @@ export const MindMakersContainer = styled.section`
 export const BgMindColor = styled.div`
   background-color: ${props => props.theme.colors.blue};
   padding-bottom: 2rem;
+
+  svg {
+    &:nth-child(0) {
+      border: 1px solid aqua;
+    }
+  }
 `
 
 export const GalleryContainer = styled.section`

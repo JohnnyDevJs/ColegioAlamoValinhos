@@ -127,7 +127,7 @@ const Kindergarten: React.FC = () => {
                 data-required="true"
               >
                 <option value="">Idade do Aluno</option>
-                <option value="18 meses">18 meses</option>
+                <option value="01 ano">01 ano</option>
                 <option value="02 anos">02 anos</option>
                 <option value="03 anos">03 anos</option>
                 <option value="04 anos">04 anos</option>
@@ -142,7 +142,8 @@ const Kindergarten: React.FC = () => {
                 name="llfield32440"
                 data-required="true"
               >
-                <option value="">Ano Letivo Desejado</option>
+                <option value="">Selecionar</option>
+                <option value="G1">G1</option>
                 <option value="G2">G2</option>
                 <option value="G3">G3</option>
                 <option value="G4">G4</option>

@@ -47,15 +47,15 @@ const Footer: React.FC = () => (
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5519989028282"
             >
-              (19) 9 8202-8282
+              (19) 9 8902-8282
             </a>
           </Paragraph>
         </Item>
       </Items>
 
-      <Link href="/vinhedo">
+      {/* <Link href="/vinhedo">
         <a className="linkVinhedo">Unidade Vinhedo</a>
-      </Link>
+      </Link> */}
     </Container>
 
     <Social>

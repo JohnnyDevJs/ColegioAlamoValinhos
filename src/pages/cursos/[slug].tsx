@@ -321,7 +321,12 @@ function Course({ course }: CourseProps) {
                     titleBorderColor="green"
                     titleSize="medium"
                   >
-                    Conheça nosso espaço
+                    {router.query.slug === 'educacao-infantil' &&
+                      'Conheça a Educação Infantil'}
+                    {router.query.slug === 'ensino-fundamental-1' &&
+                      'Conheça o Ensino Fundamental I'}
+                    {router.query.slug === 'ensino-fundamental-2' &&
+                      'Conheça o Ensino Fundamental II'}
                   </Heading>
                   <AliceCarousel
                     key={index}
@@ -350,7 +355,8 @@ function Course({ course }: CourseProps) {
                     titleBorderColor="green"
                     titleSize="medium"
                   >
-                    Conheça nosso espaço
+                    {router.query.slug === 'cursos-extracurriculares' &&
+                      'Veja um pouco dos cursos'}
                   </Heading>
 
                   <Slider

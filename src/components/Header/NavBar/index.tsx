@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
       items: [
         {
           id: 1,
-          title: 'Educação Sócioemocional',
+          title: 'Educação Socioemocional',
           slug: '/diferenciais/educacao-socioemocional'
         },
         {

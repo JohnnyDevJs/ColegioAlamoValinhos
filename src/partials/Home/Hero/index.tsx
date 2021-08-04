@@ -19,14 +19,14 @@ const Hero: React.FC = () => {
               <br />
               Álamo de educar!
             </Heading>
-            {/* <ButtonLink
+            <ButtonLink
               href="/matriculas"
               size="large"
               color="#BAC529"
               hover="#3D843C"
             >
               Matricule-se
-            </ButtonLink> */}
+            </ButtonLink>
           </Content>
         </Fade>
         <Fade cascade delay={210} direction="right" duration={500}>

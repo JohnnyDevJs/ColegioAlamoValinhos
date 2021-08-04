@@ -106,7 +106,9 @@ const Contact: React.FC = () => {
                       Telefone:
                     </Heading>
                     <Paragraph paragraphColor="#696969">
-                      <a href="#">(19) 3199-4500</a>
+                      <a rel="noreferrer" target="_blank" href="tel:1931994500">
+                        (19) 3199-4500
+                      </a>
                     </Paragraph>
                   </Item>
                 </Items>
@@ -116,7 +118,13 @@ const Contact: React.FC = () => {
                       WhatsApp:
                     </Heading>
                     <Paragraph paragraphColor="#696969">
-                      <a href="#">(19) 9 8202-8282</a>
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5519989028282"
+                      >
+                        (19) 9 8902-8282
+                      </a>
                     </Paragraph>
                   </Item>
                 </Items>

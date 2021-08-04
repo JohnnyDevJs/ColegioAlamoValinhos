@@ -8,13 +8,18 @@ import { useRouter } from 'next/dist/client/router'
 import { Document } from 'prismic-javascript/types/documents'
 import PrismicDOM from 'prismic-dom'
 import Loading from '@/components/Loading'
-import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import Container from '@/layout/Container'
 import Heading from '@/typography/Heading'
 import Collapse from '@/components/Collapse'
+
+import Badge from '../../../public/assets/badge-differential.svg'
+import BgMindTop from '../../../public/assets/background-mind-top-2.svg'
+import BgMindBottom from '../../../public/assets/background-mind-bottom-3.svg'
+import BackgroundDescriptionTop from '../../../public/assets/background-description-top-2.svg'
+import BackgroundDescriptionBottom from '../../../public/assets/background-description-bottom.svg'
 
 import {
   Hero,
@@ -53,32 +58,32 @@ import SEO from '@/components/SEO'
 interface DifferentialsProps {
   differential: Document
 }
-const SettingsVideosThumbails = {
-  dots: false,
-  arrows: false,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  swipeToSlide: true,
-  focusOnSelect: true,
-  autoplay: false,
+// const SettingsVideosThumbails = {
+//   dots: false,
+//   arrows: false,
+//   slidesToShow: 3,
+//   slidesToScroll: 3,
+//   swipeToSlide: true,
+//   focusOnSelect: true,
+//   autoplay: false,
 
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3
-      }
-    },
-    {
-      breakpoint: 400,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    }
-  ]
-}
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 3
+//       }
+//     },
+//     {
+//       breakpoint: 400,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2
+//       }
+//     }
+//   ]
+// }
 
 const SettingsFeaturedVideos = {
   autoplay: false,
@@ -119,7 +124,7 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
         color="#BAC529"
         title={
           (router.query.slug === 'educacao-socioemocional' &&
-            'Educação Sócioemocional') ||
+            'Educação Socioemocional') ||
           (router.query.slug === 'educacao-tecnologica' &&
             'Educação Tecnológica') ||
           (router.query.slug === 'educacao-financeira' &&
@@ -163,6 +168,7 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                       />
                       {router.query.slug === 'programa-bilingue' && (
                         <div className="cambridge" key={index}>
+                          <Badge />
                           <p>Certificação Cambridge</p>
                         </div>
                       )}
@@ -439,6 +445,7 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                 </Fade>
               </Container>
               <Description>
+                <BackgroundDescriptionTop />
                 <BackgroundColor>
                   <Fade
                     cascade
@@ -458,11 +465,13 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                     </Container>
                   </Fade>
                 </BackgroundColor>
+                <BackgroundDescriptionBottom />
               </Description>
             </Intelligence>
           )) ||
           (slice.slice_type === 'mind_makers' && (
             <MindMakersContainer key={index}>
+              <BgMindTop />
               <BgMindColor>
                 <Container column>
                   <Fade
@@ -504,6 +513,7 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                   </ul>
                 </Container>
               </BgMindColor>
+              <BgMindBottom />
             </MindMakersContainer>
           )) ||
           (slice.slice_type === 'videos' && (
@@ -519,25 +529,22 @@ const Differential: React.FC<DifferentialsProps> = ({ differential }) => {
                   ></div>
                 ))}
 
-                <Slider
-                  asNavFor={nav1}
-                  ref={slider2}
-                  {...SettingsVideosThumbails}
+                {/* <Slider
+                asNavFor={nav1}
+                ref={slider2}
+                {...SettingsVideosThumbails}
                 >
                   {slice.items.map((item, index) => (
                     <img
                       key={index}
-                      src={item.url.thumbnail_url.replace(
-                        'hqdefault',
-                        'maxresdefault'
-                      )}
+                      src={item.url.thumbnail_url}
                       alt={item.url.title}
                       width={item.url.thumbnail_width}
                       height={item.url.thumbnail_height}
                       onClick={() => setActive(index)}
                     />
                   ))}
-                </Slider>
+                </Slider> */}
               </Container>
             </GalleryContainer>
           )) ||

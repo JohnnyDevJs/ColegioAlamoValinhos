@@ -65,7 +65,7 @@ const Nav: React.FC = () => {
       items: [
         {
           id: 1,
-          title: 'Educação Sócioemocional',
+          title: 'Educação Socioemocional',
           url: '/diferenciais/educacao-socioemocional'
         },
         {
