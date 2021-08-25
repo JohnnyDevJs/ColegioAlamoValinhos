@@ -113,6 +113,10 @@ export const Hero = styled.section`
       }
     }
 
+    #click_form {
+      display: none;
+    }
+
     .field-error {
       color: ${props => props.theme.colors.red};
       padding-top: 3px;

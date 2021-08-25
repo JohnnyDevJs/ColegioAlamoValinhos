@@ -45,9 +45,11 @@ const Kindergarten: React.FC = () => (
         action="//paginas.rocks/capture"
         method="post"
       >
-        <input type="hidden" id="mid" name="mid" value="314947" />
-        <input type="hidden" id="fid" name="fid" value="14908" />
+        <input type="hidden" id="mid" name="mid" value="314952" />
+        <input type="hidden" id="fid" name="fid" value="14975" />
+        <input type="hidden" id="formType" name="formType" value="dynamic" />
         <div>
+          <label htmlFor="llfield32412">Responsável</label>
           <input
             type="text"
             id="llfield32412"
@@ -58,6 +60,7 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32412"></div>
         </div>
         <div>
+          <label htmlFor="llfield32414">E-mail</label>
           <input
             type="email"
             id="llfield32414"
@@ -68,6 +71,7 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32414"></div>
         </div>
         <div>
+          <label htmlFor="llfield32590">WhatsApp com DDD</label>
           <input
             type="text"
             id="llfield32590"
@@ -78,6 +82,7 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32590"></div>
         </div>
         <div>
+          <label htmlFor="llfield32441">Cidade</label>
           <input
             type="text"
             id="llfield32441"
@@ -88,21 +93,12 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32441"></div>
         </div>
         <div>
-          <input
-            type="text"
-            id="llfield32591"
-            name="llfield32591"
-            placeholder="Bairro"
-            data-required="true"
-          />
-          <div className="field-error" id="llerror32591"></div>
-        </div>
-        <div>
+          <label htmlFor="llfield30116">Nome do Aluno</label>
           <input
             type="text"
             id="llfield30116"
             name="llfield30116"
-            placeholder="Nome do aluno"
+            placeholder="Nome do Aluno"
             data-required="true"
           />
           <div className="field-error" id="llerror30116"></div>
@@ -119,37 +115,19 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32438"></div>
         </div>
         <div>
-          <label htmlFor="llfield32603">Ano Letivo</label>
-          <select id="llfield32603" name="llfield32603" data-required="true">
-            <option value="">Ano Letivo</option>
-            <option value="1º ANO">1º ANO</option>
-            <option value="2º ANO">2º ANO</option>
-            <option value="3º ANO">3º ANO</option>
-            <option value="4º ANO">4º ANO</option>
-            <option value="5º ANO">5º ANO</option>
+          <label htmlFor="llfield32733">Série desejada - F2</label>
+          <select id="llfield32733" name="llfield32733" data-required="true">
+            <option value="">Selecionar</option>
+            <option value="6º ANO">6º ANO</option>
+            <option value="7º ANO">7º ANO</option>
+            <option value="8º ANO">8º ANO</option>
+            <option value="9º ANO">9º ANO</option>
           </select>
-          <div className="field-error" id="llerror32603"></div>
+          <div className="field-error" id="llerror32733"></div>
         </div>
-        <div>
-          <label htmlFor="llfield32602">Idade do Aluno</label>
-          <select id="llfield32602" name="llfield32602" data-required="true">
-            <option value="">Idade do Aluno</option>
-            <option value="06 anos">06 anos</option>
-            <option value="07 anos">07 anos</option>
-            <option value="08 anos">08 anos</option>
-            <option value="09 anos">09 anos</option>
-            <option value="10 anos">10 anos</option>
-          </select>
-          <div className="field-error" id="llerror32602"></div>
-        </div>
+
         <div className="button-bar">
           <button type="submit">Enviar</button>
-        </div>
-        <div className="loading-box">
-          <div>loading...</div>
-        </div>
-        <div className="error-box">
-          <div></div>
         </div>
       </form>
     </Hero>

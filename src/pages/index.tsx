@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Hero from '@/partials/Home/Hero'
 import Courses from '@/partials/Home/Courses'
 import About from '@/partials/Home/About'

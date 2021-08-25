@@ -93,17 +93,20 @@ const Nav: React.FC = () => {
         {
           id: 1,
           title: 'Educação Infantil',
-          url: '/matriculas/educacao-infantil'
+          url:
+            'https://colegioalamovalinhos.com.br/matriculas/educacao-infantil'
         },
         {
           id: 2,
           title: 'Ensino Fundamental I',
-          url: '/matriculas/ensino-fundamental-1'
+          url:
+            'https://colegioalamovalinhos.com.br/matriculas/ensino-fundamental-1'
         },
         {
           id: 3,
           title: 'Ensino Fundamental II',
-          url: '/matriculas/ensino-fundamental-2'
+          url:
+            'https://colegioalamovalinhos.com.br/matriculas/ensino-fundamental-2'
         }
       ]
     },
@@ -116,6 +119,12 @@ const Nav: React.FC = () => {
     },
     {
       id: 6,
+      title: 'Agendamento',
+      url: 'https://colegioalamovalinhos.com.br/agendamento',
+      items: []
+    },
+    {
+      id: 7,
       title: 'Contato',
       url: '/contato',
       items: []

@@ -1,4 +1,5 @@
-import React, { FormEvent } from 'react'
+import React from 'react'
+
 import { Fade } from 'react-awesome-reveal'
 
 import Container from '@/layout/Container'
@@ -48,7 +49,14 @@ const Kindergarten: React.FC = () => {
           >
             <input type="hidden" id="mid" name="mid" value="314951" />
             <input type="hidden" id="fid" name="fid" value="14752" />
+            <input
+              type="hidden"
+              id="formType"
+              name="formType"
+              value="dynamic"
+            />
             <div>
+              <label htmlFor="llfield32412">Responsável</label>
               <input
                 type="text"
                 id="llfield32412"
@@ -59,6 +67,7 @@ const Kindergarten: React.FC = () => {
               <div className="field-error" id="llerror32412"></div>
             </div>
             <div>
+              <label htmlFor="llfield32414">E-mail</label>
               <input
                 type="email"
                 id="llfield32414"
@@ -69,6 +78,7 @@ const Kindergarten: React.FC = () => {
               <div className="field-error" id="llerror32414"></div>
             </div>
             <div>
+              <label htmlFor="llfield32590">WhatsApp com DDD</label>
               <input
                 type="text"
                 id="llfield32590"
@@ -79,6 +89,7 @@ const Kindergarten: React.FC = () => {
               <div className="field-error" id="llerror32590"></div>
             </div>
             <div>
+              <label htmlFor="llfield32441">Cidade</label>
               <input
                 type="text"
                 id="llfield32441"
@@ -89,21 +100,12 @@ const Kindergarten: React.FC = () => {
               <div className="field-error" id="llerror32441"></div>
             </div>
             <div>
-              <input
-                type="text"
-                id="llfield32591"
-                name="llfield32591"
-                placeholder="Bairro"
-                data-required="true"
-              />
-              <div className="field-error" id="llerror32591"></div>
-            </div>
-            <div>
+              <label htmlFor="llfield30116">Nome do Aluno</label>
               <input
                 type="text"
                 id="llfield30116"
                 name="llfield30116"
-                placeholder="Nome do aluno"
+                placeholder="Nome do Aluno"
                 data-required="true"
               />
               <div className="field-error" id="llerror30116"></div>
@@ -120,23 +122,7 @@ const Kindergarten: React.FC = () => {
               <div className="field-error" id="llerror32438"></div>
             </div>
             <div>
-              <label>Idade do Aluno INF</label>
-              <select
-                id="llfield32439"
-                name="llfield32439"
-                data-required="true"
-              >
-                <option value="">Idade do Aluno</option>
-                <option value="01 ano">01 ano</option>
-                <option value="02 anos">02 anos</option>
-                <option value="03 anos">03 anos</option>
-                <option value="04 anos">04 anos</option>
-                <option value="05 anos">05 anos</option>
-              </select>
-              <div className="field-error" id="llerror32439"></div>
-            </div>
-            <div>
-              <label>Ano letivo</label>
+              <label htmlFor="llfield32440">Grupo desejado - Infantil</label>
               <select
                 id="llfield32440"
                 name="llfield32440"
@@ -151,15 +137,9 @@ const Kindergarten: React.FC = () => {
               </select>
               <div className="field-error" id="llerror32440"></div>
             </div>
+
             <div className="button-bar">
               <button type="submit">Enviar</button>
-            </div>
-
-            <div className="loading-box">
-              <div>loading...</div>
-            </div>
-            <div className="error-box">
-              <div></div>
             </div>
           </form>
         </Fade>

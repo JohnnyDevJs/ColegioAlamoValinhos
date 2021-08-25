@@ -56,6 +56,10 @@ export default class MyDocument extends Document {
             src="https://www.googletagmanager.com/gtag/js?id=G-Y9Q65CGSK3"
           />
           <script
+            async
+            src="https://assets.calendly.com/assets/external/widget.js"
+          />
+          <script
             dangerouslySetInnerHTML={{
               __html: `
           window.dataLayer = window.dataLayer || [];

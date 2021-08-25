@@ -183,7 +183,7 @@ function Course({ course }: CourseProps) {
                         <Button
                           color="#BAC529"
                           size="large"
-                          href={`/matriculas/${router.query.slug}`}
+                          href={`https://colegioalamovalinhos.com.br/matriculas/${router.query.slug}`}
                           hover="#3D843C"
                         >
                           Matricule-se
@@ -414,14 +414,14 @@ function Course({ course }: CourseProps) {
                 paragraphColor="#305FA4"
                 size="calc(21px + (28 - 22) * ((100vw - 320px) / (1920 - 320)))"
               >
-                Quer uma escolha que desenvolva
+                Quer uma escola que desenvolva
                 <br />o que seu filho tem de melhor?
               </Paragraph>
               <Button
                 color="#BAC529"
                 hover="#3D843C"
                 size="large"
-                href={`/matriculas/${router.query.slug}`}
+                href={`https://colegioalamovalinhos.com.br/matriculas/${router.query.slug}`}
               >
                 Informações de Matrícula
               </Button>

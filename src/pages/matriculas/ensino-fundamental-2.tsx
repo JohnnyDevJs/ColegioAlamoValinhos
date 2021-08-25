@@ -158,6 +158,7 @@ const Kindergarten: React.FC = () => (
         <input type="hidden" id="fid" name="fid" value="14975" />
         <input type="hidden" id="formType" name="formType" value="dynamic" />
         <div>
+          <label htmlFor="llfield32412">Responsável</label>
           <input
             type="text"
             id="llfield32412"
@@ -168,6 +169,7 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32412"></div>
         </div>
         <div>
+          <label htmlFor="llfield32414">E-mail</label>
           <input
             type="email"
             id="llfield32414"
@@ -178,6 +180,7 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32414"></div>
         </div>
         <div>
+          <label htmlFor="llfield32590">WhatsApp com DDD</label>
           <input
             type="text"
             id="llfield32590"
@@ -188,6 +191,7 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32590"></div>
         </div>
         <div>
+          <label htmlFor="llfield32441">Cidade</label>
           <input
             type="text"
             id="llfield32441"
@@ -198,16 +202,7 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32441"></div>
         </div>
         <div>
-          <input
-            type="text"
-            id="llfield32591"
-            name="llfield32591"
-            placeholder="Bairro"
-            data-required="true"
-          />
-          <div className="field-error" id="llerror32591"></div>
-        </div>
-        <div>
+          <label htmlFor="llfield30116">Nome do Aluno</label>
           <input
             type="text"
             id="llfield30116"
@@ -229,35 +224,19 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32438"></div>
         </div>
         <div>
-          <label htmlFor="llfield32733">Ano Letivo</label>
+          <label htmlFor="llfield32733">Série desejada - F2</label>
           <select id="llfield32733" name="llfield32733" data-required="true">
-            <option value="">Ano Letivo Desejado</option>
-            <option value="6º ANO">6º Ano</option>
-            <option value="7º ANO">7º Ano</option>
-            <option value="8º ANO">8º Ano</option>
-            <option value="9º ANO">9º Ano</option>
+            <option value="">Selecionar</option>
+            <option value="6º ANO">6º ANO</option>
+            <option value="7º ANO">7º ANO</option>
+            <option value="8º ANO">8º ANO</option>
+            <option value="9º ANO">9º ANO</option>
           </select>
           <div className="field-error" id="llerror32733"></div>
         </div>
-        <div>
-          <label htmlFor="llfield32734">Idade do Aluno</label>
-          <select id="llfield32734" name="llfield32734" data-required="true">
-            <option value="">Idade do Aluno Ensino Médio</option>
-            <option value="11 anos">11 anos</option>
-            <option value="12 anos">12 anos</option>
-            <option value="13 anos">13 anos</option>
-            <option value="14 anos">14 anos</option>
-          </select>
-          <div className="field-error" id="llerror32734"></div>
-        </div>
+
         <div className="button-bar">
           <button type="submit">Enviar</button>
-        </div>
-        <div className="loading-box">
-          <div>loading...</div>
-        </div>
-        <div className="error-box">
-          <div></div>
         </div>
       </form>
     </Hero>
