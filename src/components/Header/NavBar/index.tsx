@@ -20,22 +20,22 @@ const Navbar: React.FC = () => {
         {
           id: 1,
           title: 'Galeria',
-          slug: '/o-colegio/galeria'
+          slug: 'https://colegioalamovalinhos.com.br/o-colegio/galeria'
         },
-        {
-          id: 2,
-          title: 'Blog',
-          slug: '/o-colegio/blog'
-        },
+        // {
+        //   id: 2,
+        //   title: 'Blog',
+        //   slug: '/o-colegio/blog'
+        // },
         {
           id: 3,
           title: 'Rede do Bem',
-          slug: '/o-colegio/rede-do-bem'
+          slug: 'https://colegioalamovalinhos.com.br/o-colegio/rede-do-bem'
         },
         {
           id: 4,
           title: 'Cantina',
-          slug: '/o-colegio/cantina'
+          slug: 'https://colegioalamovalinhos.com.br/o-colegio/cantina'
         }
       ]
     },
@@ -48,23 +48,27 @@ const Navbar: React.FC = () => {
         {
           id: 1,
           title: 'Educação Infantil',
-          slug: '/cursos/educacao-infantil',
-          enrollment: 'matriculas/educacao-infantil'
+          slug: 'https://colegioalamovalinhos.com.br/cursos/educacao-infantil',
+          enrollment:
+            'https://colegioalamovalinhos.com.br/matriculas/educacao-infantil'
         },
         {
           id: 2,
           title: 'Ensino Fundamental I',
-          slug: '/cursos/ensino-fundamental-1'
+          slug:
+            'https://colegioalamovalinhos.com.br/cursos/ensino-fundamental-1'
         },
         {
           id: 3,
           title: 'Ensino Fundamental II',
-          slug: '/cursos/ensino-fundamental-2'
+          slug:
+            'https://colegioalamovalinhos.com.br/cursos/ensino-fundamental-2'
         },
         {
           id: 4,
           title: 'Cursos Extracurriculares',
-          slug: '/cursos/cursos-extracurriculares'
+          slug:
+            'https://colegioalamovalinhos.com.br/cursos/cursos-extracurriculares'
         }
       ]
     },
@@ -77,29 +81,33 @@ const Navbar: React.FC = () => {
         {
           id: 1,
           title: 'Educação Socioemocional',
-          slug: '/diferenciais/educacao-socioemocional'
+          slug:
+            'https://colegioalamovalinhos.com.br/diferenciais/educacao-socioemocional'
         },
         {
           id: 2,
           title: 'Educação Tecnológica',
-          slug: '/diferenciais/educacao-tecnologica'
+          slug:
+            'https://colegioalamovalinhos.com.br/diferenciais/educacao-tecnologica'
         },
         {
           id: 3,
           title: 'Educação Financeira',
-          slug: '/diferenciais/educacao-financeira'
+          slug:
+            'https://colegioalamovalinhos.com.br/diferenciais/educacao-financeira'
         },
         {
           id: 4,
           title: 'Programa Bilíngue',
-          slug: '/diferenciais/programa-bilingue'
+          slug:
+            'https://colegioalamovalinhos.com.br/diferenciais/programa-bilingue'
         }
       ]
     },
     {
       id: 4,
       title: 'Matrículas',
-      slug: '/matriculas',
+      slug: 'matriculas',
       width: '297px',
       items: [
         {
@@ -138,7 +146,7 @@ const Navbar: React.FC = () => {
     {
       id: 7,
       title: 'Contato',
-      slug: '/contato',
+      slug: 'https://colegioalamovalinhos.com.br/contato',
       width: ''
     }
   ]
@@ -156,22 +164,22 @@ const Navbar: React.FC = () => {
               >
                 {navItem.items.map(item => (
                   <li key={item.id}>
-                    <Link href={item.slug}>
-                      <a
-                        className={router.asPath === item.slug ? 'active' : ''}
-                      >
-                        {item.title}
-                      </a>
-                    </Link>
+                    <a
+                      href={item.slug}
+                      className={router.asPath === item.slug ? 'active' : ''}
+                    >
+                      {item.title}
+                    </a>
                   </li>
                 ))}
               </Dropdown>
             ) : (
-              <Link href={navItem.slug} key={navItem.id}>
-                <a className={router.pathname === navItem.slug ? 'active' : ''}>
-                  {navItem.title}
-                </a>
-              </Link>
+              <a
+                href={navItem.slug}
+                className={router.pathname === navItem.slug ? 'active' : ''}
+              >
+                {navItem.title}
+              </a>
             )
           )}
         </Nav>

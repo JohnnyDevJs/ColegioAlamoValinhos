@@ -45,8 +45,8 @@ const Kindergarten: React.FC = () => (
         action="//paginas.rocks/capture"
         method="post"
       >
-        <input type="hidden" id="mid" name="mid" value="314952" />
-        <input type="hidden" id="fid" name="fid" value="14975" />
+        <input type="hidden" id="mid" name="mid" value="314947" />
+        <input type="hidden" id="fid" name="fid" value="14908" />
         <input type="hidden" id="formType" name="formType" value="dynamic" />
         <div>
           <label htmlFor="llfield32412">Responsável</label>
@@ -115,15 +115,16 @@ const Kindergarten: React.FC = () => (
           <div className="field-error" id="llerror32438"></div>
         </div>
         <div>
-          <label htmlFor="llfield32733">Série desejada - F2</label>
-          <select id="llfield32733" name="llfield32733" data-required="true">
+          <label htmlFor="llfield32603">Série desejada - F1</label>
+          <select id="llfield32603" name="llfield32603" data-required="true">
             <option value="">Selecionar</option>
-            <option value="6º ANO">6º ANO</option>
-            <option value="7º ANO">7º ANO</option>
-            <option value="8º ANO">8º ANO</option>
-            <option value="9º ANO">9º ANO</option>
+            <option value="1º ANO">1º ANO</option>
+            <option value="2º ANO">2º ANO</option>
+            <option value="3º ANO">3º ANO</option>
+            <option value="4º ANO">4º ANO</option>
+            <option value="5º ANO">5º ANO</option>
           </select>
-          <div className="field-error" id="llerror32733"></div>
+          <div className="field-error" id="llerror32603"></div>
         </div>
 
         <div className="button-bar">

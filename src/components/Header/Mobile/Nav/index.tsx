@@ -14,25 +14,25 @@ const Nav: React.FC = () => {
       title: 'O Colégio',
       url: '',
       items: [
-        {
-          id: 1,
-          title: 'Blog',
-          url: '/o-colegio/blog'
-        },
+        // {
+        //   id: 1,
+        //   title: 'Blog',
+        //   url: '/o-colegio/blog'
+        // },
         {
           id: 2,
           title: 'Rede do Bem',
-          url: '/o-colegio/rede-do-bem'
+          url: 'https://colegioalamovalinhos.com.br/o-colegio/rede-do-bem'
         },
         {
           id: 3,
           title: 'Cantina',
-          url: '/o-colegio/cantina'
+          url: 'https://colegioalamovalinhos.com.br/o-colegio/cantina'
         },
         {
           id: 4,
           title: 'Galeria',
-          url: '/o-colegio/galeria'
+          url: 'https://colegioalamovalinhos.com.br/o-colegio/galeria'
         }
       ]
     },
@@ -44,17 +44,17 @@ const Nav: React.FC = () => {
         {
           id: 1,
           title: 'Educação Infantil',
-          url: '/cursos/educacao-infantil'
+          url: 'https://colegioalamovalinhos.com.br/cursos/educacao-infantil'
         },
         {
           id: 2,
           title: 'Ensino Fundamental I',
-          url: '/cursos/ensino-fundamental-1'
+          url: 'https://colegioalamovalinhos.com.br/cursos/ensino-fundamental-1'
         },
         {
           id: 3,
           title: 'Ensino Fundamental II',
-          url: '/cursos/ensino-fundamental-2'
+          url: 'https://colegioalamovalinhos.com.br/cursos/ensino-fundamental-2'
         }
       ]
     },
@@ -66,22 +66,26 @@ const Nav: React.FC = () => {
         {
           id: 1,
           title: 'Educação Socioemocional',
-          url: '/diferenciais/educacao-socioemocional'
+          url:
+            'https://colegioalamovalinhos.com.br/diferenciais/educacao-socioemocional'
         },
         {
           id: 2,
           title: 'Educação Tecnológica',
-          url: '/diferenciais/educacao-tecnologica'
+          url:
+            'https://colegioalamovalinhos.com.br/diferenciais/educacao-tecnologica'
         },
         {
           id: 3,
           title: 'Educação Financeira',
-          url: '/diferenciais/educacao-financeira'
+          url:
+            'https://colegioalamovalinhos.com.br/diferenciais/educacao-financeira'
         },
         {
           id: 4,
           title: 'Programa Bilíngue',
-          url: '/diferenciais/programa-bilingue'
+          url:
+            'https://colegioalamovalinhos.com.br/diferenciais/programa-bilingue'
         }
       ]
     },
@@ -126,7 +130,7 @@ const Nav: React.FC = () => {
     {
       id: 7,
       title: 'Contato',
-      url: '/contato',
+      url: 'https://colegioalamovalinhos.com.br/contato',
       items: []
     }
   ]
@@ -142,26 +146,25 @@ const Nav: React.FC = () => {
           <Accordion key={accordion.id} title={accordion.title}>
             {accordion.items.map(item => (
               <li key={item.id}>
-                <Link href={item.url}>
-                  <a
-                    onClick={handleCloseToggle}
-                    className={router.asPath === item.url ? 'active' : ''}
-                  >
-                    {item.title}
-                  </a>
-                </Link>
+                <a
+                  href={item.url}
+                  onClick={handleCloseToggle}
+                  className={router.asPath === item.url ? 'active' : ''}
+                >
+                  {item.title}
+                </a>
               </li>
             ))}
           </Accordion>
         ) : (
-          <Link key={accordion.id} href={accordion.url}>
-            <a
-              onClick={handleCloseToggle}
-              className={router.pathname === accordion.url ? 'active' : ''}
-            >
-              {accordion.title}
-            </a>
-          </Link>
+          <a
+            key={accordion.id}
+            href={accordion.url}
+            onClick={handleCloseToggle}
+            className={router.pathname === accordion.url ? 'active' : ''}
+          >
+            {accordion.title}
+          </a>
         )
       )}
     </NavContainer>

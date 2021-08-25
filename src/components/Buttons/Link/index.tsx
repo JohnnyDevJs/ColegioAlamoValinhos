@@ -19,7 +19,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   target,
   children
 }) => (
-  <Link href={href} passHref replace>
+  <a href={href}>
     <ButtonLinkContainer
       target={target}
       size={size}
@@ -28,7 +28,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
     >
       {children}
     </ButtonLinkContainer>
-  </Link>
+  </a>
 )
 
 export default ButtonLink
