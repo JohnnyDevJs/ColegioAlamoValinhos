@@ -41,6 +41,108 @@ const Kindergarten: React.FC = () => {
         </Container>
         <EnrollmentImage />
         <Fade cascade delay={200} duration={500} direction="up" triggerOnce>
+          {/* <form
+            id="llCaptureForm"
+            className="llform001"
+            action="//paginas.rocks/capture"
+            method="post"
+          >
+            <input type="hidden" id="mid" name="mid" value="314951" />
+            <input type="hidden" id="fid" name="fid" value="14752" />
+            <input
+              type="hidden"
+              id="formType"
+              name="formType"
+              value="dynamic"
+            />
+            <div>
+              <label htmlFor="llfield32412">Responsável</label>
+              <input
+                type="text"
+                id="llfield32412"
+                name="llfield32412"
+                placeholder="Nome do Responsável"
+                data-required="true"
+              />
+              <div className="field-error" id="llerror32412"></div>
+            </div>
+            <div>
+              <label htmlFor="llfield32414">E-mail</label>
+              <input
+                type="email"
+                id="llfield32414"
+                name="llfield32414"
+                placeholder="Seu Melhor E-mail"
+                data-required="true"
+              />
+              <div className="field-error" id="llerror32414"></div>
+            </div>
+            <div>
+              <label htmlFor="llfield32590">WhatsApp com DDD</label>
+              <input
+                type="text"
+                id="llfield32590"
+                name="llfield32590"
+                placeholder="WhatsApp com DDD"
+                data-required="true"
+              />
+              <div className="field-error" id="llerror32590"></div>
+            </div>
+            <div>
+              <label htmlFor="llfield32441">Cidade</label>
+              <input
+                type="text"
+                id="llfield32441"
+                name="llfield32441"
+                placeholder="Cidade"
+                data-required="true"
+              />
+              <div className="field-error" id="llerror32441"></div>
+            </div>
+            <div>
+              <label htmlFor="llfield30116">Nome do Aluno</label>
+              <input
+                type="text"
+                id="llfield30116"
+                name="llfield30116"
+                placeholder="Nome do Aluno"
+                data-required="true"
+              />
+              <div className="field-error" id="llerror30116"></div>
+            </div>
+            <div>
+              <label htmlFor="llfield32438">Data de Nascimento</label>
+              <input
+                type="date"
+                id="llfield32438"
+                name="llfield32438"
+                placeholder="Data de Nascimento"
+                data-required="true"
+              />
+              <div className="field-error" id="llerror32438"></div>
+            </div>
+            <div>
+              <label htmlFor="llfield32440">Grupo desejado - Infantil</label>
+              <select
+                id="llfield32440"
+                name="llfield32440"
+                data-required="true"
+              >
+                <option value="">Selecionar</option>
+                <option value="G1">G1</option>
+                <option value="G2">G2</option>
+                <option value="G3">G3</option>
+                <option value="G4">G4</option>
+                <option value="G5">G5</option>
+              </select>
+              <div className="field-error" id="llerror32440"></div>
+            </div>
+
+            <div className="button-bar">
+              <button type="submit">Enviar</button>
+            </div>
+          </form> */}
+
           <form
             id="llCaptureForm"
             className="llform001"
@@ -140,6 +242,17 @@ const Kindergarten: React.FC = () => {
 
             <div className="button-bar">
               <button type="submit">Enviar</button>
+            </div>
+            <div className="loading-box">
+              <img src="//paginas.rocks/content/images/spinner.gif" />
+              <div>loading...</div>
+            </div>
+            <div className="error-box">
+              <img src="//paginas.rocks/content/images/error-icon.png" />
+              <div></div>
+              <button type="button" className="btn" id="btn-error">
+                Ok
+              </button>
             </div>
           </form>
         </Fade>
