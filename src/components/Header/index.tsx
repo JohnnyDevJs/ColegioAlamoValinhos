@@ -6,7 +6,7 @@ import { HeaderContainer, Logo } from './styles'
 import TopBar from '@/components/Header/TopBar'
 import NavBar from '@/components/Header/NavBar'
 import Toggle from '@/components/Header/Mobile/Toggle'
-import AlamoValinhosLogo from '../../../public/assets/alamo-logo-valinhos-2.svg'
+import AlamoValinhosLogo from '../../../public/assets/new-alamo-valinhos-logo.svg'
 
 const Header: React.FC = () => (
   <>

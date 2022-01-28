@@ -51,7 +51,7 @@ const Carteen: React.FC<CarteenProps> = ({ carteen }) => {
             </ul>
             {carteen.map(item => (
               <Link href={item.data.url.url} passHref={true}>
-                Vizualizar Cardápio
+                Visualizar Cardápio
               </Link>
             ))}
           </ContentFood>
